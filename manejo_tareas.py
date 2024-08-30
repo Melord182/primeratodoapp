@@ -1,6 +1,6 @@
 from conexion_db import *
 from datetime import date
-##FALTA CREAR MODIFICAR TAREA, ELIMINAR TAREA y VER TAREAS
+
 class Tareas:
     fecha_actual = date.today()
     
@@ -32,7 +32,7 @@ class Tareas:
             conector.close()    
         except mysql.connector.Error as error:
             print(f"Error al guardar tarea {error}")
-    #OBTENER TAREA COMPLETA
+    #OBTENER TAREA COMPLETA (para almacenarla y luego usarla)
     @staticmethod
     def obtener_tarea_completa(idtarea):
         try:
@@ -65,7 +65,7 @@ class Tareas:
             conector.close()     
         except mysql.connector.Error as error:
             return f"Error al guardar tarea {error}"
-        
+    #Eliminar tarea
     def eliminar_tareas(idusuario):
         try:
             conector = Conexion.conectar()
