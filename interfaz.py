@@ -25,12 +25,12 @@ def to_do_app_executable():
         
         interfaz = Tk()
         interfaz.title("To do App")
-        interfaz.geometry("1270x700+150+50")
+        interfaz.geometry("1280x700+150+50")
         interfaz.resizable(False,False)
         interfaz.config(
             bg='lightskyblue',
             padx=20,
-            pady=20
+            pady=5
         )
         interfaz.iconbitmap('C:\\Users\\jaime\\Documents\\Mi primera To Do App\\data\\images\\icono.ico')
         #Creacion de la estructura de datos y luego ingresarlos en la cuadrilla
